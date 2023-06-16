@@ -4,7 +4,13 @@ use carphys::{Car, CarPlugin, Player};
 /// App entry point.
 fn main() {
     App::new()
-        .add_plugins(DefaultPlugins)
+        .add_plugins(DefaultPlugins.set(WindowPlugin {
+            primary_window: Some(Window {
+                title: "Car physics simulator".into(),
+                ..default()
+            }),
+            ..default()
+        }))
         .add_plugin(CarPlugin)
         .add_startup_system(setup_graphics)
         .add_system(update_speed)

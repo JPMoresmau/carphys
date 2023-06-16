@@ -11,6 +11,7 @@ Controls can be clicking on the accelerate/brake pedal, using up/down on the key
 
 This is purely for self-education, but just in case it's useful...
 
+![Screenshot](/screenshot.png "Screenshot of the Bevy app")
 
 ## Credits
 
